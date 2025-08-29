@@ -18,7 +18,7 @@ export function MessageBubble({ article, createdAt }: Props) {
   };
 
   return (
-    <div className="max-w-2xl mx-auto bg-gray-100 dark:bg-gray-800 p-4 rounded-2xl shadow-sm">
+    <div className="max-w-2xl mx-auto bg-gray-100 dark:bg-gray-800 p-4 rounded-2xl shadow-md border border-gray-300 dark:border-gray-600">
       <div className="prose dark:prose-invert">
         <p>{article}</p>
       </div>

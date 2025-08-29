@@ -43,7 +43,7 @@ export function InputBar({ onNewArticle, onClear }: Props) {
   return (
     <form
       onSubmit={handleSubmit}
-      className="border-t border-gray-200 dark:border-gray-700 p-4 flex items-center space-x-2"
+      className="border-t-2 border-gray-300 dark:border-gray-700 p-4 flex items-center space-x-2"
     >
       <input
         type="text"
@@ -58,7 +58,7 @@ export function InputBar({ onNewArticle, onClear }: Props) {
       <button
         type="submit"
         disabled={loading}
-        className="px-4 py-2 bg-primary-500 text-white rounded-xl shadow hover:opacity-90 disabled:opacity-50"
+        className="px-3 py-2 border rounded-xl border-gray-300 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-700 shadow disabled:opacity-50 disabled:cursor-not-allowed"
       >
         {loading ? <LoadingDots /> : 'Generate'}
       </button>
@@ -66,7 +66,7 @@ export function InputBar({ onNewArticle, onClear }: Props) {
       <button
         type="button"
         onClick={onClear}
-        className="px-3 py-2 text-sm border rounded-xl border-gray-300 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700"
+        className="px-3 py-2 border rounded-xl border-gray-300 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-700 shadow disabled:opacity-50 disabled:cursor-not-allowed"
       >
         Clear
       </button>

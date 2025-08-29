@@ -22,7 +22,7 @@ export default function RootLayout({
         {/* Main content */}
         <div className="flex-1 flex flex-col">
           {/* Top bar */}
-          <header className="h-12 flex items-center justify-between px-4 border-b border-gray-200 dark:border-gray-700">
+          <header className="h-16 flex items-center justify-between px-4 border-b-2 border-gray-300 dark:border-gray-600">
             <h1 className="font-semibold text-lg">AI Article Generator</h1>
             <ThemeToggle />
           </header>
