@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth fonts */
+html,
+body {
+  @apply antialiased;
+}
+
+/* Custom prose styles for generated article */
+.prose {
+  @apply text-sm leading-relaxed;
+}
+
+.prose p {
+  @apply mb-2;
+}
