@@ -7,11 +7,11 @@ export function Sidebar() {
   const [isCollapsed, setIsCollapsed] = useState(false);
 
   return (
-    <aside className={`hidden md:flex flex-col border-r-2 border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-900 ${
+    <aside className={`hidden md:flex flex-col border-r-2 border-gray-150 dark:border-gray-900 bg-white dark:bg-gray-950 ${
       isCollapsed ? 'w-16' : 'w-56'
     } transition-[width] duration-300 ease-in-out`}>
       {/* Header with toggle button */}
-      <div className="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700">
+      <div className="flex items-center justify-between p-4">
         <div className={`transition-all duration-300 ease-in-out ${isCollapsed ? 'opacity-0 w-0 overflow-hidden' : 'opacity-100 w-auto'}`}>
           <div className="flex items-center space-x-2">
             <Menu size={20} className="text-gray-600 dark:text-gray-300" />
@@ -52,7 +52,7 @@ export function Sidebar() {
       </nav>
 
       {/* Settings section at bottom */}
-      <div className="p-4 border-t border-gray-200 dark:border-gray-700">
+      <div className="p-4">
         {isCollapsed ? (
           <div className="flex flex-col items-center space-y-4">
             <button

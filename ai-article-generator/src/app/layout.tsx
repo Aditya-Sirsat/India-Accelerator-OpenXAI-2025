@@ -15,14 +15,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="h-full">
-      <body className="h-full flex bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+      <body className="h-full flex bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100">
         {/* Sidebar (future features placeholder) */}
         <Sidebar />
 
         {/* Main content */}
         <div className="flex-1 flex flex-col">
           {/* Top bar */}
-          <header className="h-16 flex items-center justify-between px-4 border-b-2 border-gray-300 dark:border-gray-600">
+          <header className="h-16 flex items-center justify-between px-4 ">
             <h1 className="font-semibold text-lg">AI Article Generator</h1>
             <ThemeToggle />
           </header>

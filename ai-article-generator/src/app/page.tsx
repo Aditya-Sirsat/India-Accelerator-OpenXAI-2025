@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import { ChatContainer } from '@/components/ChatContainer';
-import { InputBar } from '@/components/InputBar';
 import { useLocalHistory } from '@/hooks/useLocalHistory';
 import type { ArticleResponse } from '@/types';
 
@@ -21,11 +20,12 @@ export default function HomePage() {
 
   return (
     <div className="flex flex-col h-full">
-      {/* Chat area */}
-      <ChatContainer messages={messages} />
-
-      {/* Input at bottom */}
-      <InputBar onNewArticle={handleNewArticle} onClear={handleClear} />
+      {/* Chat area with integrated floating input bar */}
+      <ChatContainer 
+        messages={messages} 
+        onNewArticle={handleNewArticle} 
+        onClear={handleClear} 
+      />
     </div>
   );
 }

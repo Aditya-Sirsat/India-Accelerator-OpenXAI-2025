@@ -11,7 +11,16 @@ export async function POST(req: NextRequest) {
       )
     }
 
-    const prompt = `Write a short, unique article (~150 words) about "${topic}". Keep it clear and concise.`
+    const prompt = `Write a comprehensive, well-researched, and thoughtful article about "${topic}". The article should be detailed (approximately 800-1200 words) and include:
+
+1. A compelling introduction that hooks the reader
+2. In-depth analysis with multiple perspectives
+3. Supporting evidence and examples
+4. Critical thinking and nuanced viewpoints
+5. Practical implications and real-world applications
+6. A thoughtful conclusion that ties everything together
+
+Write in simple, clean text without any markdown formatting, special characters, or formatting symbols. Use clear paragraphs, natural language, and straightforward presentation. Make the content engaging, informative, and intellectually stimulating while maintaining excellent readability and visual appeal. Ensure the article provides genuine value and insights that readers can learn from.`
 
     const response = await fetch('http://localhost:11434/api/generate', {
       method: 'POST',
